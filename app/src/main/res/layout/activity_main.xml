@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/yourImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/paper" />
+
+        <TextView
+            android:id="@+id/yourTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your choice"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/npcImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/scissors" />
+
+        <TextView
+            android:id="@+id/npcTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opponent choice"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="100dp">
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result: Your: 0 Opponent: 0"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/buttonRock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Rock"
+            android:textSize="19sp"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            android:id="@+id/buttonPaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Paper"
+            android:textSize="19sp"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            android:id="@+id/buttonScissors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Scissors"
+            android:textSize="19sp"
+            android:onClick="onButtonClick"/>
+    </LinearLayout>
+
+</RelativeLayout>
